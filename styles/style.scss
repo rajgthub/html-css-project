@@ -61,7 +61,51 @@
   color:white;
   @include flx-center;
 }
-
+.top-container{
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  width:80%;
+  background-color: darken($main-left-col,14%);
+  height: 100%;
+  color:white;
+  font-size: 4rem;
+  &--nav{
+    background-color: darken($main-left-col,3%);
+  }
+}
+.header__navigation{
+  @include flx-center;
+}
+//navigaition
+.navigation{
+  &__list{
+    list-style: none;
+    justify-content: space-around;
+  }
+}
+//btn
+.btn-txt{
+  &:link, &:visited{
+    text-decoration: none;
+    color:white;
+  }
+  &:active, &:focus{
+    border: none;
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+    color: blue;
+  }
+}
+.btn-nav{
+  @extend .btn-txt;
+  font-size: 2rem;
+  &:hover{
+    color: green;
+  }
+}
 
 
 
