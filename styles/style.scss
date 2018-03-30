@@ -33,22 +33,22 @@
   display: flex;
   flex-direction: column;
   &__article-1{
+    flex-grow: 1;
     background-color: darken(#ff4500,5%);
-    width:20%;
     @include flx-center;
     font-size: 3rem;
     color: white;
   }
-  &__article-1{
+  &__article-2{
+    flex-grow: 1;
     background-color: darken(#ffc0cb,20%);
-    width:60%;
     @include flx-center;
     font-size: 3rem;
     color: blue;
   } 
   &__article-3{
+    flex-grow: 1;
     background-color: darken(#ffa500, 20%);
-    width:20%;
     @include flx-center;
     font-size: 3rem;
     color: white;
