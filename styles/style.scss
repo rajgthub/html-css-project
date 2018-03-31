@@ -1,13 +1,13 @@
 @import 'abstract';
 .container{
-  height:100vh;
-  background-color: gray;
+  min-height:100vh;
+  background-color: lighten(#808080, 40%);;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .header{
-  height:30%;
+  height:20rem;
   color:white;
   font-size: 3rem;
   background-color: lighten($primary-col,10%);
@@ -28,36 +28,44 @@
   }
 }
 .main-content{
-  background-color: lightblue;
-  height: 50%;
+  background-color: lighten(#808080, 38%);
+  //  height:200%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  align-self: center;
+  padding: 2rem;
   &__article-1{
-    flex-grow: 1;
-    background-color: darken(#ff4500,5%);
-    @include flx-center;
-    font-size: 3rem;
-    color: white;
+    // flex-grow: 1;
+    // background-color: darken(#ff4500,5%);
+    // @include flx-center;
+    font-size: 2rem;
+    // color: white;
+    padding: 1.5rem;
   }
   &__article-2{
-    flex-grow: 1;
-    background-color: darken(#ffc0cb,20%);
-    @include flx-center;
-    font-size: 3rem;
-    color: blue;
+    // flex-grow: 3;
+    // background-color: darken(#ffc0cb,20%);
+    // @include flx-center;
+    font-size: 2rem;
+    // color: white;
+    padding: 2rem;
+    margin: .5rem 0;
   } 
   &__article-3{
-    flex-grow: 1;
-    background-color: darken(#ffa500, 20%);
-    @include flx-center;
-    font-size: 3rem;
-    color: white;
+    // flex-grow: .5;
+    // background-color: darken(#ffa500, 20%);
+    // @include flx-center;
+    font-size: 2rem;
+    // color: white;
+    padding: 1.5rem;
   }
 }
 .foot{
   font-size: 2rem;
   background-color: lighten(#000000,10%);
-  height: 20%;
+  height: 10rem;
+  // flex-grow: 1;
   color:white;
   @include flx-center;
 }
@@ -153,7 +161,24 @@
   text-decoration: none;
 }
 
-
-
+// 
+article > p {
+  padding: 1rem 0;
+}
+article > footer {
+  font-style: italic;
+  font-weight: 600;
+  color: darken(#808080, 30%);
+}
+article  h2 {
+  letter-spacing: .3rem;
+  line-height: 3rem;
+}
+article:nth-of-type(2){
+  background-color: lighten(#808080, 50%);
+}
+article:first-child h2{
+  color:blue;
+}
 
 
